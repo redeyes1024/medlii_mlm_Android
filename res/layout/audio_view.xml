@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mike_image"
+    android:padding="12.5px" >
+
+    <ImageButton
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@layout/btn_back" >
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="100px"
+        android:text="text"
+        android:textColor="#020202"
+        android:textSize="30px" 
+        android:singleLine="true"
+        >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="80px"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" 
+        android:background="#848484"
+         android:padding="5px" >
+
+        <SeekBar
+            android:id="@+id/volume_sb"
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:max="15"
+            android:progress="7" >
+        </SeekBar>
+    </LinearLayout>
+
+</RelativeLayout>

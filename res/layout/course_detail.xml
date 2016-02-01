@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:padding="12.5px" >
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bar"
+        android:padding="7px" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Course Detail"
+            android:textColor="#010101"
+            android:textStyle="bold" >
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@layout/btn_back" >
+        </ImageButton>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_body"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/layout_top"
+        android:layout_marginTop="25px"
+        android:background="@drawable/box_s3" >
+
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15px" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="5px" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Course: "
+                        android:textColor="#010101"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/course"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fish"
+                        android:textColor="#010101"
+                        android:textStyle="bold" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="5px" >
+
+                    <TextView
+                        android:id="@+id/date_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ramu 00 0000 00:00"
+                        android:textColor="#090909"
+                        android:textSize="20px" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="5px" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Description: "
+                        android:textColor="#010101"
+                        android:textStyle="bold" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="5px" >
+					<WebView
+                        android:id="@+id/description"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+                    </WebView>
+                    <!-- <TextView
+                        android:id="@+id/description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="text"
+                        android:textColor="#090909"
+                        android:textSize="20px" >
+                    </TextView> -->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="5px" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Classes: "
+                        android:textColor="#010101"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/class_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#010101" >
+                    </TextView>
+                </LinearLayout>
+
+                <TableLayout
+                    android:id="@+id/table_head"
+                    android:layout_width="418px"
+                    android:layout_height="36px"
+                    android:stretchColumns="*" >
+
+                    <TableRow android:background="@drawable/box_top_s10" >
+
+                        <LinearLayout
+                            android:layout_width="38px"
+                            android:layout_height="wrap_content" >
+
+                            <ImageView
+                                android:layout_width="1px"
+                                android:layout_height="36px"
+                                android:layout_gravity="center" >
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="36px"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|center_horizontal"
+                                android:gravity="center_horizontal"
+                                android:text="S.no"
+                                android:textColor="#FFFFFF"
+                                android:textSize="15px"
+                                android:textStyle="bold" >
+                            </TextView>
+
+							-->
+							
+
+                            <ImageView
+                                android:layout_width="1px"
+                                android:layout_height="36px"
+                                android:layout_gravity="center"
+                                android:background="@drawable/line_2_s10" >
+                            </ImageView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="110px"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:layout_width="109px"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center_horizontal"
+                                android:text="Class"
+                                android:textColor="#FFFFFF"
+                                android:textSize="15px"
+                                android:textStyle="bold" >
+                            </TextView>
+
+                            <ImageView
+                                android:layout_width="1px"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/line_2_s10" >
+                            </ImageView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="190px"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:layout_width="189px"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center_horizontal"
+                                android:text="Time"
+                                android:textColor="#FFFFFF"
+                                android:textSize="15px"
+                                android:textStyle="bold" >
+                            </TextView>
+
+                            <ImageView
+                                android:layout_width="1px"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/line_2_s10" >
+                            </ImageView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="80px"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:layout_width="79px"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal|bottom"
+                                android:text="Duration"
+                                android:textColor="#FFFFFF"
+                                android:textSize="15px"
+                                android:textStyle="bold" >
+                            </TextView>
+                            <!--
+                                <ImageView android:layout_height="wrap_content" android:layout_width="1px" 
+								android:background="@drawable/line_2_s10" android:layout_gravity="center"> 
+								</ImageView>
+                            -->
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow android:background="@drawable/line_1_s10" >
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:id="@+id/table_body"
+                    android:layout_width="418px"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:stretchColumns="*" >
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:padding="12.5px" >
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bar"
+        android:padding="7px" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Register"
+            android:textColor="#010101"
+            android:textStyle="bold" >
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@layout/btn_back" >
+        </ImageButton>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_body"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/layout_top"
+        android:layout_marginTop="25px"
+        android:background="@drawable/box_s3" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="350px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25px"
+                android:background="@drawable/input_box_s2"
+                android:hint="E-mail"
+                android:paddingLeft="7px"
+                android:singleLine="true"
+                android:textSize="20px"
+                android:inputType="textVisiblePassword" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="350px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25px"
+                android:background="@drawable/input_box_s2"
+                android:hint="Password"
+                android:paddingLeft="7px"
+                android:password="true"
+                android:singleLine="true"
+                android:textSize="20px"
+                android:inputType="textVisiblePassword" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/re_password"
+                android:layout_width="350px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25px"
+                android:background="@drawable/input_box_s2"
+                android:hint="Re-enter Password"
+                android:paddingLeft="7px"
+                android:password="true"
+                android:singleLine="true"
+                android:textSize="20px"
+                android:inputType="textVisiblePassword" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/emp_id"
+                android:layout_width="350px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25px"
+                android:background="@drawable/input_box_s2"
+                android:hint="Employee ID"
+                android:paddingLeft="7px"
+                android:singleLine="true"
+                android:textSize="20px"
+                android:inputType="textVisiblePassword" >
+            </EditText>
+            
+<!--             <TextView -->
+<!--        			android:id="@+id/company_spinner" -->
+<!--                 android:layout_width="350px" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:background="@drawable/drop_down_s6" -->
+<!--                 android:gravity="center_vertical" -->
+<!--                 android:paddingLeft="7px" -->
+<!--                 android:paddingRight="30px" -->
+<!--                 android:singleLine="true" -->
+<!--                 android:text="Select Company " -->
+<!--                 android:textColor="#010101" -->
+<!--                	android:layout_marginTop="25px">              -->
+<!--       		</TextView> -->
+<!--             <TextView -->
+<!--                 android:id="@+id/group_spinner" -->
+<!--                 android:layout_width="350px" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:background="@drawable/drop_down_s6" -->
+<!--                 android:gravity="center_vertical" -->
+<!--                 android:paddingLeft="7px" -->
+<!--                 android:paddingRight="30px" -->
+<!--                 android:singleLine="true" -->
+<!--                 android:text="Select Group" -->
+<!--                 android:textColor="#010101" -->
+<!--                 android:layout_marginTop="25px"> -->
+<!--              </TextView>  -->
+             <EditText
+                android:id="@+id/groupid"
+                android:layout_width="350px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25px"
+                android:background="@drawable/input_box_s2"
+                android:hint="Group ID"
+                android:paddingLeft="7px"
+                android:singleLine="true"
+                android:textSize="20px"
+                android:inputType="textVisiblePassword" >
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/btn_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35px"
+                android:background="@layout/btn_submit_2" >
+            </ImageButton>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

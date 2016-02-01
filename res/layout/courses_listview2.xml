@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_lay"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/strip_middel_s5"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="15px"
+    android:paddingRight="60px" >
+
+    <TextView
+        android:id="@+id/course_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Allen Stuart"
+        android:textColor="#010101"
+        android:textSize="20px"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/course_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="allen@yahoo.com"
+        android:textSize="15px"
+        android:textStyle="bold" >
+    </TextView>
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/table"
+    android:layout_width="418px"
+    android:layout_height="36px"
+    android:stretchColumns="*" >
+
+    <TableRow >
+
+        <LinearLayout
+            android:layout_width="38px"
+            android:layout_height="36px" >
+
+            <ImageView
+                android:layout_width="1px"
+                android:layout_height="36px"
+                android:layout_gravity="center"
+                android:background="@drawable/line_2_s10" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/sno"
+                android:layout_width="36px"
+                android:layout_height="36px"
+                android:layout_gravity="center|center_horizontal"
+                android:gravity="center|center_horizontal"
+                android:text="1"
+                android:textColor="#3B3B3B"
+                android:textSize="13px"
+                android:textStyle="bold" >
+            </TextView>
+
+            <ImageView
+                android:layout_width="1px"
+                android:layout_height="36px"
+                android:layout_gravity="center"
+                android:background="@drawable/line_2_s10" >
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="110px"
+            android:layout_height="36px"
+            android:layout_gravity="center"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/class_no"
+                android:layout_width="109px"
+                android:layout_height="36px"
+                android:layout_gravity="center"
+                android:gravity="center|center_horizontal"
+                android:text="leadership Development"
+                android:textColor="#3B3B3B"
+                android:textSize="13px"
+                android:textStyle="bold" >
+            </TextView>
+
+            <ImageView
+                android:layout_width="1px"
+                android:layout_height="36px"
+                android:layout_gravity="center"
+                android:background="@drawable/line_2_s10" >
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="190px"
+            android:layout_height="36px"
+            android:layout_gravity="center"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="189px"
+                android:layout_height="36px"
+                android:layout_gravity="center"
+                android:gravity="center|center_horizontal"
+                android:text="September 14, 2011  55:55 AM"
+                android:textColor="#3B3B3B"
+                android:textSize="13px"
+                android:textStyle="bold" >
+            </TextView>
+
+            <ImageView
+                android:layout_width="1px"
+                android:layout_height="36px"
+                android:layout_gravity="center"
+                android:background="@drawable/line_2_s10" >
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="80px"
+            android:layout_height="36px"
+            android:layout_gravity="center"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/duration"
+                android:layout_width="79px"
+                android:layout_height="36px"
+                android:gravity="center|center_horizontal"
+                android:text="7 Hours"
+                android:textColor="#3B3B3B"
+                android:textSize="13px"
+                android:textStyle="bold" >
+            </TextView>
+
+            <ImageView
+                android:layout_width="1px"
+                android:layout_height="36px"
+                android:layout_gravity="center"
+                android:background="@drawable/line_2_s10" >
+            </ImageView>
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow android:background="@drawable/line_1_s10" >
+    </TableRow>
+
+</TableLayout>

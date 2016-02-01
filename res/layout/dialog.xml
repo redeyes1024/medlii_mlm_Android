@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="392px"
+    android:layout_height="wrap_content"
+    android:background="@drawable/box_s2a"
+    android:padding="5px" 
+    android:gravity="center_vertical" >
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/input_box_s2"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="7px"
+        android:singleLine="true"
+        android:textSize="20px" >
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_marginTop="20px"
+        android:gravity="center_horizontal" >
+
+        <ImageButton
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@layout/btn_submit" >
+        </ImageButton>
+        
+        <ImageButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:background="@layout/btn_cancel" >
+        </ImageButton>
+    </LinearLayout>
+
+</RelativeLayout>

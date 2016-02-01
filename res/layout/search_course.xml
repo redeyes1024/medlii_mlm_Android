@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:padding="12.5px" >
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bar"
+        android:padding="7px" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Search Course"
+            android:textColor="#010101"
+            android:textStyle="bold" >
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@layout/btn_back" >
+        </ImageButton>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_body"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/layout_top"
+        android:layout_marginTop="25px"
+        android:background="@drawable/box_s3" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px" >
+
+                <RadioGroup
+                    android:id="@+id/search_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/course_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30px"
+                        android:button="@layout/btn_radio"
+                        android:checked="true"
+                        android:text="Course title"
+                        android:textColor="#010101" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/class_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@layout/btn_radio"
+                        android:checked="false"
+                        android:text="Class"
+                        android:textColor="#010101" >
+                    </RadioButton>
+                </RadioGroup>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:orientation="vertical" >
+
+<!--                 <Spinner -->
+<!--                     android:id="@+id/spinner_class" -->
+<!--                     android:layout_width="350px" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:background="@drawable/drop_down_s6" -->
+<!--                     android:scrollbars="horizontal" -->
+<!--                     android:visibility="gone" > -->
+<!--                 </Spinner> -->
+                
+                <TextView
+                    android:id="@+id/spinner_class"
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/drop_down_s6"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="7px"
+                    android:paddingRight="30px"
+                    android:singleLine="true"
+                    android:text="Select Class"
+                    android:textColor="#010101"
+                    android:visibility="gone" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/coursetitle"
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_box_s2"
+                    android:hint="Enter Course Title"
+                    android:paddingLeft="7px"
+                    android:singleLine="true"
+                    android:textSize="20px"
+                    android:visibility="visible" >
+                </EditText>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="45px"
+                android:background="@layout/btn_search_s6" >
+            </ImageButton>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

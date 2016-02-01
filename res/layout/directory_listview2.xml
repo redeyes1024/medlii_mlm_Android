@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_lay"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/strip_middel_s4"
+    android:orientation="vertical"
+    android:padding="15px" >
+
+    <TextView
+        android:id="@+id/member_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Allen Stuart"
+        android:textColor="#010101"
+        android:textSize="20px"
+        android:textStyle="bold" >
+    </TextView>
+    <TextView
+        android:id="@+id/job_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="job1"
+        android:textColor="#010101"
+        android:textSize="20px"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="allen@yahoo.com"
+        android:textSize="20px"
+        android:textColor="#0000FF"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/contact_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9876543210"
+        android:textColor="#2A562A"
+        android:textSize="20px"
+        android:textStyle="bold" >
+    </TextView>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/spinner_textview"
+    android:layout_width="fill_parent"
+    android:layout_height="50px"
+    android:layout_gravity="left"
+    android:background="#EEEEEE"
+    android:gravity="center_vertical"
+    android:paddingLeft="10px"
+    android:text="Select Class"
+    android:lines="2"
+    android:textColor="#000000"
+    android:textSize="20px" >
+
+</TextView>

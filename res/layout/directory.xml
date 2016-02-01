@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:padding="12.5px" >
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bar"
+        android:padding="7px" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Directory"
+            android:textColor="#010101"
+            android:textStyle="bold" >
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@layout/btn_home" >
+        </ImageButton>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_top"
+        android:layout_marginTop="25px"
+        android:background="@drawable/input_search_bar"
+        android:padding="7px" >
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="350px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="#FDFDFD"
+            android:hint="Search by name/email"
+            android:paddingLeft="7px"
+            android:singleLine="true"
+            android:focusableInTouchMode="true"
+            android:textSize="20px" >
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@layout/btn_search" >
+        </ImageButton>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_body"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/layout_search"
+        android:layout_marginTop="25px"
+        android:background="@drawable/box_s4" >
+
+        <!-- <LinearLayout android:layout_width="wrap_content" -->
+        <!-- android:orientation="vertical" android:layout_height="wrap_content" -->
+        <!-- android:layout_centerHorizontal="true"> -->
+        <!-- <ListView android:layout_width="fill_parent" android:id="@+id/list" -->
+        <!-- android:scrollbars="none" android:fadingEdge="none" -->
+        <!-- android:listSelector="@drawable/strip_middel_s4_h" -->
+        <!-- android:layout_height="wrap_content"></ListView> -->
+        <!-- </LinearLayout> -->
+
+        <ScrollView
+            android:id="@+id/ScrollView01"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fadingEdge="none" >
+
+            <LinearLayout
+                android:id="@+id/mylayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

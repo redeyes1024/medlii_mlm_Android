@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_s2_new" >
+
+    <LinearLayout
+        android:id="@+id/layout_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        
+        >
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="350px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25px"
+            android:background="@drawable/input_box_s2"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="7px"
+            android:singleLine="true"
+            android:textSize="20px" >
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="350px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25px"
+            android:background="@drawable/input_box_s2"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="7px"
+            android:password="true"
+            android:singleLine="true"
+            android:textSize="20px"
+            
+             >
+
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25px"
+            android:background="@layout/btn_login" >
+        </ImageButton>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5px"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/forgot_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15px"
+            android:text="@string/pwd"
+            android:textColor="#484848" >
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/innertable"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="80px"
+            android:layout_marginTop="30px"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:stretchColumns="0" >
+
+            <TextView
+                android:id="@+id/new_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:text="New User ?"
+                android:textColor="#4D4D4D"
+                android:textStyle="bold" >
+            </TextView>
+
+            <ImageButton
+                android:id="@+id/btn_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:background="@layout/btn_signup" >
+            </ImageButton>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

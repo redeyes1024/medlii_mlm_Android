@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, Loading!</string>
+    <string name="app_name">MLM</string>
+    <string name="pwd"><u>Forgot  your password?</u></string>
+
+    <style name="Theme_Dialog_Translucent" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <color name="transparent">#00000000</color>
+    <string name="url">http://mlm.hospitalu.com/</string>
+    <string name="GoogleAPIid">"UA-29857239-1"</string>
+    <string name="GoogleAPIvalue">http://mlm.hospitalu.com</string>
+
+</resources>

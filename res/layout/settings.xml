@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:padding="12.5px" >
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bar"
+        android:padding="7px" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Settings"
+            android:textColor="#010101"
+            android:textStyle="bold" >
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@layout/btn_home" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@layout/btn_logout" >
+        </ImageButton>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_auto_log_in"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_top"
+        android:layout_marginTop="20px"
+        android:background="@drawable/input_search_bar"
+        android:padding="7px" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="7px"
+            android:text="Auto Log-in"
+            android:textColor="#010101"
+            android:textSize="20px"
+            android:textStyle="bold" >
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/btn_on1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/on"
+            android:visibility="visible" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btn_off1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/off"
+            android:visibility="gone" >
+        </ImageButton>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_alert_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_auto_log_in"
+        android:layout_marginTop="20px"
+        android:background="@drawable/input_search_bar"
+        android:padding="7px" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="7px"
+            android:text="Alerts in Email"
+            android:textColor="#010101"
+            android:textSize="20px"
+            android:textStyle="bold" >
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/btn_on2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/on"
+            android:visibility="visible" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btn_off2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/off"
+            android:visibility="gone" >
+        </ImageButton>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_alert_email"
+        android:layout_marginTop="20px"
+        android:background="@drawable/input_search_bar"
+        android:padding="7px" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="7px"
+            android:text="Change Password"
+            android:textColor="#010101"
+            android:textSize="20px"
+            android:textStyle="bold" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/btn_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_go"
+            android:visibility="visible" >
+        </ImageView>
+
+    </RelativeLayout>
+
+<!--     <RelativeLayout -->
+<!--         android:id="@+id/layout_body" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignParentBottom="true" -->
+<!--         android:layout_below="@id/layout_alert_email" -->
+<!--         android:layout_marginTop="25px" -->
+<!--         android:background="@drawable/box_s20" > -->
+
+<!--         <LinearLayout -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_centerHorizontal="true" -->
+<!--             android:orientation="vertical" > -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/title" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_marginTop="30px" -->
+<!--                 android:text="Password Setting:" -->
+<!--                 android:textColor="#010101" -->
+<!--                 android:textSize="20px" -->
+<!--                 android:textStyle="bold" > -->
+<!--             </TextView> -->
+
+<!--             <EditText -->
+<!--                 android:id="@+id/old_password" -->
+<!--                 android:layout_width="350px" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_marginTop="25px" -->
+<!--                 android:background="@drawable/input_box_s2" -->
+<!--                 android:hint="Enter Old Password" -->
+<!--                 android:paddingLeft="7px" -->
+<!--                 android:password="true" -->
+<!--                 android:singleLine="true" -->
+<!--                 android:textSize="20px" > -->
+<!--             </EditText> -->
+
+<!--             <EditText -->
+<!--                 android:id="@+id/new_password" -->
+<!--                 android:layout_width="350px" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_marginTop="25px" -->
+<!--                 android:background="@drawable/input_box_s2" -->
+<!--                 android:hint="Enter New Password" -->
+<!--                 android:paddingLeft="7px" -->
+<!--                 android:password="true" -->
+<!--                 android:singleLine="true" -->
+<!--                 android:textSize="20px" > -->
+<!--             </EditText> -->
+
+<!--             <EditText -->
+<!--                 android:id="@+id/re_new_password" -->
+<!--                 android:layout_width="350px" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_marginTop="25px" -->
+<!--                 android:background="@drawable/input_box_s2" -->
+<!--                 android:hint="Re-enter New Password" -->
+<!--                 android:paddingLeft="7px" -->
+<!--                 android:password="true" -->
+<!--                 android:singleLine="true" -->
+<!--                 android:textSize="20px" > -->
+<!--             </EditText> -->
+
+<!--             <ImageButton -->
+<!--                 android:id="@+id/btn_save" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_gravity="center_horizontal" -->
+<!--                 android:layout_marginTop="35px" -->
+<!--                 android:background="@layout/btn_save" > -->
+<!--             </ImageButton> -->
+<!--         </LinearLayout> -->
+<!--     </RelativeLayout> -->
+
+</RelativeLayout>
